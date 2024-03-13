@@ -41,11 +41,11 @@
 
 
 .next {
-    right: -130%;
+    right: -100%;
     top: 100%;
 }
 
 .prev {
-    left: -130%;
+    left: -100%;
     top: 100%;
 }

@@ -12,10 +12,10 @@ const MidLayer = () => {
             <Grid item xs={4} >
                 <Image style={{ width: "250px", height: "480px" }} src={Phone} alt='phone' />
             </Grid>
-            <Grid item xs={8}>
+            <Grid px={2} item xs={8}>
                 <Typography className='poppins' sx={{
                     fontSize: "15px",
-                    fontWeight: 600,
+                    fontWeight: 500,
                     lineHeight: "24px",
                     letterSpacing: "0em",
                     textAlign: "left",
@@ -24,8 +24,8 @@ const MidLayer = () => {
 
                 }}>DOWNLOAD</Typography>
                 <Typography className='poppins' sx={{
-                    fontSize: "25px",
-                    fontWeight: 700,
+                    fontSize: "23px",
+                    fontWeight: 600,
                     lineHeight: "46px",
                     letterSpacing: "0em",
                     textAlign: "left",
@@ -33,8 +33,8 @@ const MidLayer = () => {
                 }}>Use Our App</Typography>
                 <Box sx={{ border: "2px solid #CBCBCD", height: "3px", width: "70px", mt: 2 }} />
                 <Typography className='poppins' sx={{
-                    fontSize: "20px",
-                    fontWeight: 400,
+                    fontSize: "19px",
+                    fontWeight: 300,
                     letterSpacing: "0em",
                     textAlign: "left",
                     color: "#75767A",
@@ -44,52 +44,52 @@ const MidLayer = () => {
                     smartphone and book a car in a couple of seconds.
                 </Typography>
                 <Box sx={{ display: "flex", alignItems: "center", mt: 2 }}>
-                    <Box pr={3}>
-                        <Image style={{ height: '47px', width: '47px' }} src={Shield} alt='Shield' />
+                    <Box pr={4}>
+                        <Image style={{ height: '40px', width: '40px' }} src={Shield} alt='Shield' />
                     </Box>
                     <Box>
                         <Typography className='poppins' sx={{
-                            fontSize: "20px",
+                            fontSize: "19px",
                             fontWeight: 600,
                             letterSpacing: "0em",
                             textAlign: "left",
                         }}>It’s Safe</Typography>
                         <Typography className='poppins' sx={{
-                            fontSize: "20px",
-                            fontWeight: 400,
+                            fontSize: "18px",
+                            fontWeight: 300,
                             letterSpacing: "0em",
                             textAlign: "left",
                             color: "#75767A"
                         }}>
-                            We don’t take very personal info except what is required and your login credentials
+                            We don’t take very personal info except what <br /> is required and your login credentials
                         </Typography>
                     </Box>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mt: 2 }}>
                     <Box pr={3}>
-                        <Image style={{ height: '47px', width: '47px' }} src={Forward} alt='Shield' />
+                        <Image style={{ height: '40px', width: '40px' }} src={Forward} alt='Shield' />
                     </Box>
                     <Box>
                         <Typography className='poppins' sx={{
-                            fontSize: "20px",
+                            fontSize: "19px",
                             fontWeight: 600,
                             letterSpacing: "0em",
                             textAlign: "left",
                         }}>It’s Fast</Typography>
                         <Typography className='poppins' sx={{
-                            fontSize: "20px",
-                            fontWeight: 400,
+                            fontSize: "18px",
+                            fontWeight: 300,
                             letterSpacing: "0em",
                             textAlign: "left",
                             color: "#75767A"
                         }}>
-                            You can book a car simply with just your smart phone and your preference.
+                            You can book a car simply with just your smart <br /> phone and your preference.
                         </Typography>
                     </Box>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "center", mt: 2 }}>
                     <Box>
-                        <Image style={{ height: '75px', width: '171px' }} src={Google} alt='Shield' />
+                        <Image style={{ height: '70px', width: '165px' }} src={Google} alt='Shield' />
                     </Box>
                 </Box>
             </Grid>
