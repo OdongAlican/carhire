@@ -45,8 +45,8 @@ const Banner = () => {
                                 cheap car rental
                             </Typography>
                             <Typography className='poppins' sx={{
-                                fontSize: "20px",
-                                fontWeight: 400,
+                                fontSize: "18px",
+                                fontWeight: 300,
                                 mt: 2,
                                 textAlign: "center",
                                 color: "#75767A"

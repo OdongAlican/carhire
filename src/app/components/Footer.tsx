@@ -7,32 +7,32 @@ const Footer = () => {
     return (
         <Box sx={{ paddingX: "100px", p: 6, mt: 6 }} bgcolor='#000'>
             <Grid xs={12} container item px={6} pb={6} borderBottom={`1px solid${grey[100]}`}>
-                <Grid item xs={5.4}>
+                <Grid item xs={4}>
                     <Typography className='poppins' sx={{ color: "#fff", mb: 1, fontWeight: 600 }}>_About</Typography>
-                    <Typography className='poppins' sx={{ color: "#fff" }}>
+                    <Typography fontWeight={200} className='poppins' sx={{ color: "#fff" }}>
                         Carent is a trading name of renting car Transport
                         Limited which is a limited company registered
                         in Uganda and Kenya (Number: 05179829)
                         whose registered address is P.O.BOX 2265
                     </Typography>
                 </Grid>
-                <Grid item xs={2.2} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <Grid item xs={2.6} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <Typography sx={{ color: "#fff" }}>
-                        <Typography className='poppins' sx={{ color: "#fff", mb: 1, fontWeight: 600 }}>_Company</Typography>
-                        <Typography className='poppins'>Partners</Typography>
-                        <Typography className='poppins'>Press</Typography>
-                        <Typography className='poppins'>About</Typography>
-                        <Typography className='poppins'>Customers</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins' sx={{ color: "#fff", mb: 1, fontWeight: 600 }}>_Company</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Partners</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Press</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>About</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Customers</Typography>
                     </Typography></Grid>
-                <Grid item xs={2.2} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <Grid item xs={2.6} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <Typography sx={{ color: "#fff" }}>
-                        <Typography className='poppins' sx={{ color: "#fff", mb: 1, fontWeight: 600 }}>_Information</Typography>
-                        <Typography className='poppins'>Our Approach</Typography>
-                        <Typography className='poppins'>Contact</Typography>
-                        <Typography className='poppins'>Blog</Typography>
-                        <Typography className='poppins'>Brands</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins' sx={{ color: "#fff", mb: 1, fontWeight: 600 }}>_Information</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Our Approach</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Contact</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Blog</Typography>
+                        <Typography fontWeight={200} fontSize={14} className='poppins'>Brands</Typography>
                     </Typography></Grid>
-                <Grid item xs={2.2} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+                <Grid item xs={2.6} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                     <Typography className='poppins' sx={{ color: "#fff", mb: 1, fontWeight: 600 }}>_Follow Us</Typography>
                     <Box>
                         <FaTwitter style={{ color: "#fff", marginRight: "5px", height: "20px", width: "20px" }} />
@@ -64,15 +64,24 @@ const Footer = () => {
                         <path d="M200.165 51.9564L202.088 46.7499H203.185L200.753 52.899H199.554L197.121 46.7499H198.23L200.165 51.9564Z" fill="#EEEEEE" />
                         <path d="M212.118 49.5888C212.118 49.7833 212.106 49.989 212.084 50.206H207.129C207.166 50.8119 207.374 51.2869 207.751 51.631C208.135 51.9677 208.599 52.136 209.142 52.136C209.587 52.136 209.957 52.035 210.251 51.833C210.553 51.6236 210.764 51.3468 210.885 51.0027H211.993C211.827 51.5936 211.496 52.0761 210.998 52.4502C210.5 52.8167 209.881 53 209.142 53C208.554 53 208.026 52.8691 207.558 52.6073C207.098 52.3454 206.736 51.9752 206.472 51.4964C206.208 51.0101 206.076 50.4491 206.076 49.8132C206.076 49.1774 206.205 48.6201 206.461 48.1413C206.717 47.6625 207.076 47.296 207.536 47.0417C208.003 46.7798 208.539 46.6489 209.142 46.6489C209.731 46.6489 210.251 46.7761 210.704 47.0304C211.156 47.2848 211.503 47.6364 211.744 48.0852C211.993 48.5266 212.118 49.0278 212.118 49.5888ZM211.054 49.3756C211.054 48.9866 210.968 48.6537 210.794 48.3769C210.621 48.0927 210.383 47.8795 210.081 47.7374C209.787 47.5877 209.459 47.5129 209.097 47.5129C208.577 47.5129 208.132 47.6775 207.762 48.0067C207.4 48.3358 207.193 48.7921 207.14 49.3756H211.054Z" fill="#EEEEEE" />
                     </svg>
-                    <Typography className='poppins' sx={{ color: "#fff", mt: 3 }}>
+                    <Typography 
+                    fontWeight={200} 
+                    fontSize={14} 
+                    className='poppins' 
+                    sx={{ 
+                        color: "#fff", 
+                        mt: 3,
+                        display: "flex",
+                        alignItems: "center"
+                        }}>
                         @ 2023 Carent. All Rights Reserved.
                     </Typography>
                 </Box>
                 <Box sx={{ display: "flex", alignItems: "end", color: "#fff" }}>
-                    <Typography className='poppins' sx={{mr: 3}}>
+                    <Typography fontWeight={200} fontSize={14} className='poppins' sx={{ mr: 3 }}>
                         Privacy Policy
                     </Typography>
-                    <Typography className='poppins'>
+                    <Typography fontWeight={200} fontSize={14} className='poppins'>
                         Cookies
                     </Typography>
                 </Box>

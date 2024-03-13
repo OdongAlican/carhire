@@ -6,7 +6,7 @@ import Image from 'next/image';
 const IntroSection = () => {
   return (
     <Grid container xs={12}>
-      <Grid item xs={6} padding={6}>
+      <Grid item xs={6} py={8}>
         <Typography
           className='poppins'
           sx={{
@@ -24,33 +24,33 @@ const IntroSection = () => {
         <Typography
           className='poppins'
           sx={{
-            fontSize: "18px",
-            fontWeight: 400,
+            fontSize: "20px",
+            fontWeight: 300,
             lineHeight: "35px",
             letterSpacing: "0em",
             textAlign: "left",
             color: "#75767A",
-            pt: 4
+            mt: 3
           }}>
           Rushing somewhere, have a gig to get to, somewhere
           quick you need to get to, just come, Rent and Drive
         </Typography>
       </Grid>
-      <Grid bgcolor="teal" item xs={6}>
+      <Grid item xs={6}>
         <Box
           sx={{
             height: "100%",
             width: "100%",
             display: "flex",
             justifyContent: "center",
-            position: "relative"
+            position: "relative",
           }}>
           <Image style={{
-            width: "100%",
+            width: "90%",
             height: "90%",
+            bottom: 0,
+            right: 0,
             position: "absolute",
-            left: 0,
-            right: 0
           }} src={CarLogo} alt="Description" />
           <Box sx={{ bgcolor: "#F2F2F2", height: "100%", width: "30%", borderRadius: "5px" }} />
         </Box>

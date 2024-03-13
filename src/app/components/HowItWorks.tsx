@@ -21,8 +21,6 @@ export const Step = ({ step: { Logo, header, text, id } }: IStep) => (
         display="flex"
         alignItems="center"
         flexDirection="column"
-        sx={{
-        }}
         height="100%"
         xs={12}>
         <Box sx={{
@@ -32,28 +30,23 @@ export const Step = ({ step: { Logo, header, text, id } }: IStep) => (
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            height: "100%",
             flexDirection: "column"
         }}>
             <Box height={`${id % 2 !== 0 ? "100%" : "50%"}`}
-                sx={{
-                    display: "flex", alignItems: "center"
-                }}>
+                sx={{ display: "flex", alignItems: "center" }}>
                 <Logo />
             </Box>
-            <Box height="50%" />
         </Box>
         <Typography className='poppins' sx={{
             fontSize: "15px",
             fontWeight: 600,
-            lineHeight: "45px",
+            py: 2,
             letterSpacing: "0em",
-            textAlign: "center",
-
+            textAlign: "center"
         }}>{header}</Typography>
         <Typography className='poppins' sx={{
             fontSize: "14px",
-            fontWeight: "400px",
+            fontWeight: 300,
             letterSpacing: "0em",
             textAlign: "center",
             color: "#75767A"
@@ -77,7 +70,7 @@ const HowItWorks = () => {
             }, {
                 id: 2,
                 Logo: () => (
-                    <svg width="103" height="17" viewBox="0 0 103 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg style={{ marginTop: "30px"}} width="103" height="17" viewBox="0 0 103 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.28222 15.1465C17.9489 5.22584 61.2822 -8.66304 101.282 15.1465" stroke="black" strokeWidth="3" strokeDasharray="5 5" />
                     </svg>
                 )
@@ -90,7 +83,7 @@ const HowItWorks = () => {
             }, {
                 id: 4,
                 Logo: () => (
-                    <svg width="102" height="18" viewBox="0 0 102 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg style={{ marginTop: "30px"}}  width="102" height="18" viewBox="0 0 102 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M100.972 1.85719C84.5441 12.1682 41.5504 27.0753 0.999966 4.21588" stroke="black" strokeWidth="3" strokeDasharray="5 5" />
                     </svg>
                 )
@@ -103,7 +96,7 @@ const HowItWorks = () => {
             }, {
                 id: 6,
                 Logo: () => (
-                    <svg width="103" height="17" viewBox="0 0 103 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg style={{ marginTop: "30px"}}  width="103" height="17" viewBox="0 0 103 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.28222 15.1465C17.9489 5.22584 61.2822 -8.66304 101.282 15.1465" stroke="black" strokeWidth="3" strokeDasharray="5 5" />
                     </svg>
                 )

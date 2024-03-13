@@ -39,7 +39,7 @@ const PopularItem = ({ header, model, price, image, index }: IPopularItem) => (
             }}>{model}</Typography>
             <Typography className='poppins' sx={{
                 fontSize: "13px",
-                fontWeight: 300,
+                fontWeight: 400,
                 lineHeight: "20px",
                 letterSpacing: "0em",
                 textAlign: "left",
@@ -57,7 +57,7 @@ const Popular = () => {
         { name: "Audi", model: "Audi Model S black", price: "Shs 300,000 / day", image: PopularOne }
     ]
     return (
-        <Grid container xs={12} padding={6} pb={0}>
+        <Grid container xs={12} py={6} pb={0}>
             <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
                 <Typography className='poppins' sx={{
                     fontSize: "20px",

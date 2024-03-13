@@ -1,20 +1,16 @@
-import { Box, Button, Card, Grid, Typography } from '@mui/material'
 import React from 'react';
-import { FaSearch } from "react-icons/fa";
-import { FaWallet } from "react-icons/fa6";
-import { BiSolidCloudRain } from "react-icons/bi";
-import { grey } from '@mui/material/colors';
+import { Box, Button, Card, Grid, Typography } from '@mui/material';
 
 interface ISearchContent {
     header: string;
     text: string;
-    Icon: React.ElementType
+    Icon: React.ReactNode
 }
 
 const SearchContent = ({ header, text, Icon }: ISearchContent) => (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
         <Box sx={{ display: "flex", justifyContent: "center", alignItems: "center", px: 2 }}>
-            <Icon />
+            {Icon}
         </Box>
         <Box sx={{ flex: 3 }}>
             <Typography
@@ -47,16 +43,28 @@ const SearchSection = () => {
             <Card sx={{ width: "100%" }}>
                 <Grid container item xs={12} px={2} py={2} >
                     <Grid item xs={3} borderRight="2px solid #CBCBCD">
-                        <SearchContent header='Search Brand' text='Mercedez' Icon={FaSearch} />
+                        <SearchContent header='Search Brand' text='Mercedez' Icon={(
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M13.3249 15.4988C11.9542 16.4455 10.2919 17 8.5 17C3.80558 17 0 13.1944 0 8.5C0 3.80558 3.80558 0 8.5 0C13.1944 0 17 3.80558 17 8.5C17 10.3319 16.4205 12.0285 15.4348 13.4163C15.712 13.3983 15.9952 13.4952 16.2071 13.7071L19.2574 16.7574C19.4146 16.9146 19.5186 17.1211 19.5325 17.3431C19.6987 19.9915 17.6018 19.995 16.2766 19.5935C16.094 19.5382 15.9392 19.4189 15.8247 19.2663L13.5204 16.1938C13.3659 15.9879 13.302 15.7394 13.3249 15.4988ZM15 8.5C15 12.0899 12.0899 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5Z" fill="black" />
+                            </svg>
+                        )} />
                     </Grid>
-                    <Grid item xs={4} borderRight="2px solid #CBCBCD">
-                        <SearchContent header='Search Type' text='2022 AMG GT Class' Icon={BiSolidCloudRain} />
+                    <Grid item xs={3.5} borderRight="2px solid #CBCBCD">
+                        <SearchContent header='Search Type' text='2022 AMG GT Class' Icon={(
+                            <svg width="20" height="20" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M10.6688 0.282606C8.66241 0.868982 6.28244 3.21026 5.89575 4.9773C5.67958 5.9676 4.98909 6.65838 3.59868 7.27482C-1.47449 9.52435 -0.782436 16.1996 4.67743 17.6772C6.61666 18.2019 6.6791 18.292 6.6791 20.5716C6.6791 23.0574 5.85168 23.6728 4.58036 22.133C3.5672 20.9059 1.56815 21.1701 0.59696 22.6603C-0.198987 23.8816 -0.198987 24.0756 0.59696 25.2969C1.71611 27.0138 3.51998 27.2248 5.10505 25.8247C5.53791 25.4424 6.48235 25.0485 7.20379 24.9494C8.42368 24.7822 8.52652 24.5391 8.67185 21.4739L8.82768 18.1781H10.6394C12.3488 18.1781 12.4506 18.2789 12.4506 19.9673C12.4506 21.0715 12.1495 21.8725 11.6636 22.0602C10.3393 22.5707 10.6824 25.4082 12.1883 26.4C13.4035 27.2 13.5965 27.2 14.8117 26.4C16.3176 25.4082 16.6607 22.5707 15.3364 22.0602C14.8505 21.8725 14.5494 21.0715 14.5494 19.9673C14.5494 18.2789 14.6512 18.1781 16.3606 18.1781H18.1723L18.3281 21.4739C18.4735 24.5391 18.5763 24.7822 19.7962 24.9494C20.5177 25.0485 21.4621 25.4424 21.895 25.8247C23.48 27.2248 25.2839 27.0138 26.403 25.2969C27.199 24.0756 27.199 23.8816 26.403 22.6603C25.4319 21.1701 23.4328 20.9059 22.4196 22.133C21.1441 23.6775 20.3209 23.0569 20.3209 20.5511C20.3209 19.006 20.5497 18.1771 20.9768 18.175C21.3377 18.1734 22.5366 17.9197 23.6422 17.6113C25.1957 17.1778 25.8222 16.6405 26.4036 15.2415C27.0578 13.668 27.0568 13.1939 26.3962 11.6057C25.8999 10.4113 25.1695 9.66092 24.288 9.4384C23.4554 9.22852 22.619 8.42068 22.1038 7.32966C21.6447 6.35729 20.8403 5.42446 20.3167 5.25783C19.7931 5.09067 18.7437 4.1357 17.985 3.13591C15.9267 0.423927 13.4675 -0.535261 10.6688 0.282606Z" fill="black" />
+                            </svg>
+                        )} />
                     </Grid>
                     <Grid item xs={4}>
-                        <SearchContent header='Range Price' text='Shs300,000 - Shs500,000' Icon={FaWallet} />
+                        <SearchContent header='Range Price' text='Shs300,000 - Shs500,000' Icon={(
+                            <svg width="23" height="20" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fillRule="evenodd" clipRule="evenodd" d="M1.1985 1.18527L0 2.37005V13.2282C0 24.0076 0.00829919 24.0959 1.17751 25.4405L2.35502 26.7952L14.5788 26.9396C26.35 27.0781 26.8401 27.0468 27.8029 26.0947C28.4165 25.4878 28.8032 24.4744 28.8032 23.4736V21.8417L25.8506 21.6307C23.3262 21.4502 22.6715 21.1953 21.3348 19.8734C19.9962 18.5495 19.7717 17.9837 19.7717 15.9323C19.7717 13.8809 19.9962 13.3151 21.3348 11.9912C22.6715 10.6693 23.3262 10.4144 25.8506 10.2338L28.8032 10.0229V8.39101C28.8032 6.54479 27.3918 4.82797 25.874 4.82797C25.132 4.82797 24.8976 4.50594 24.8976 3.48724C24.8976 2.74953 24.5554 1.66324 24.1375 1.07326C23.3926 0.0207603 23.1743 0 12.8872 0C2.39994 0 2.39603 0.000482762 1.1985 1.18527ZM21.9685 3.62098V4.82797H12.5011C4.90776 4.82797 2.98235 4.69616 2.77535 4.16267C2.18953 2.65345 3.56036 2.41398 12.7906 2.41398H21.9685V3.62098ZM22.6998 13.2339C21.0839 14.832 21.0839 17.0326 22.6998 18.6306C23.8104 19.729 24.2361 19.8241 27.4597 19.6952L31 19.5533V15.9323V12.3113L27.4597 12.1694C24.2361 12.0405 23.8104 12.1356 22.6998 13.2339ZM26.3827 15.2322C26.9012 15.8507 26.8694 16.1206 26.1982 16.7839C25.4405 17.5337 25.3312 17.5337 24.5735 16.7839C23.9022 16.1206 23.8705 15.8507 24.3889 15.2322C24.7346 14.8209 25.1832 14.4839 25.3858 14.4839C25.5884 14.4839 26.0371 14.8209 26.3827 15.2322Z" fill="black" />
+                            </svg>
+                        )} />
                     </Grid>
-                    <Grid item xs={1} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
-                        <Button className='poppins' variant='contained' size='medium' sx={{ bgcolor: grey[900], px: 3 }}>SEARCH</Button>
+                    <Grid item xs={1.5} sx={{ display: "flex", justifyContent: "center", alignItems: "center" }}>
+                        <Button className='poppins' variant='contained' size='large' sx={{ bgcolor: "black", px: 6 }}>SEARCH</Button>
                     </Grid>
                 </Grid>
             </Card>

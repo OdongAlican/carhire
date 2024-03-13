@@ -116,8 +116,6 @@ const Testimonial = () => {
         beforeChange: (current, next) => setImageIndex(next)
     }
 
-    console.log(imageIndex + 1, "index!!")
-
     return (
         <React.Fragment>
             <Grid
@@ -137,7 +135,7 @@ const Testimonial = () => {
                     <Typography className='poppins' sx={{
                         textTransform: 'uppercase',
                         fontSize: "14px",
-                        fontWeight: 500,
+                        fontWeight: 400,
                         lineHeight: "24px",
                         letterSpacing: "0em",
                         textAlign: "center",
@@ -158,7 +156,7 @@ const Testimonial = () => {
                     }} />
                 </Grid>
                 <Grid item xs={4} py={4}>
-                    <Box px={4}>
+                    <Box>
                         <Slider {...settings}>
                             {people.map((person, index) => {
                                 return (
@@ -176,7 +174,7 @@ const Testimonial = () => {
                                                 imageIndex === 0 ? imageIndex + 1 :
                                                     imageIndex === 1 ? imageIndex + 1 :
                                                         0
-                                            ) && <Typography className='poppins' pt={2} textAlign='center'>{person.name}</Typography>}
+                                            ) && <Typography fontWeight={500} className='poppins' pt={2} textAlign='center'>{person.name}</Typography>}
                                         {index === (
                                                 imageIndex === 0 ? imageIndex + 1 :
                                                     imageIndex === 1 ? imageIndex + 1 :
@@ -198,7 +196,7 @@ const Testimonial = () => {
                     <Box px={6}>
                         <Image style={{ height: "30px", width: "30px" }} src={SoundTop} alt='speaking' />
                     </Box>
-                    <Typography className='poppins' sx={{ px: 6, color: "#75767A", textAlign: "center" }}>
+                    <Typography className='poppins' fontWeight={300} sx={{ px: 6, color: "#75767A", textAlign: "center", my: 1 }}>
                         {
                             imageIndex === 0 ? (people[1].comment) :
                                 imageIndex === 1 ? (people[2].comment) :
