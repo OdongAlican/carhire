@@ -33,8 +33,8 @@ const Login = () => {
             item>
             <Grid item xs={12}>
                 <Typography className='poppins' sx={{
-                    fontSize: "22px",
-                    fontWeight: 700,
+                    fontSize: "24px",
+                    fontWeight: 600,
                     lineHeight: "46px",
                     letterSpacing: "0em",
                     textAlign: "center",
