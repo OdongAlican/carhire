@@ -109,7 +109,7 @@ const HowItWorks = () => {
             }
         ]
     return (
-        <Grid container xs={12} padding={6}>
+        <Grid container xs={12} padding={6} item>
             <Grid item sx={{ display: "flex", flexDirection: "column", alignItems: "center" }} xs={12}>
                 <Typography className='poppins' sx={{
                     textTransform: 'uppercase',

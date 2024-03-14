@@ -27,7 +27,7 @@ const SingleCarLogo = ({ logo, index }: ISingleCarLogo) => (
 const CarLogo = () => {
     const logos = [Nissan, Toyota, Mercedez, Audi, Toyota, Mercedez, Honda, Audi, Honda, Nissan]
     return (
-        <Grid container xs={12} py={6}>
+        <Grid container xs={12} py={6} item>
             <Grid container item xs={12} py={0} spacing={2}>
                 {logos.map((logo, index) => (
                     <Grid key={index} item xs={1.2}>

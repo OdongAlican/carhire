@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const IntroSection = () => {
   return (
-    <Grid container xs={12}>
+    <Grid container xs={12} item>
       <Grid item xs={6} py={8}>
         <Typography
           className='poppins'

@@ -57,7 +57,7 @@ const Popular = () => {
         { name: "Audi", model: "Audi Model S black", price: "Shs 300,000 / day", image: PopularOne }
     ]
     return (
-        <Grid container xs={12} py={6} pb={0}>
+        <Grid container xs={12} py={6} pb={0} item>
             <Box sx={{ display: "flex", justifyContent: "space-between", width: "100%" }}>
                 <Typography className='poppins' sx={{
                     fontSize: "20px",

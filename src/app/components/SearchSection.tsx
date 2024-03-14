@@ -39,7 +39,7 @@ const SearchContent = ({ header, text, Icon }: ISearchContent) => (
 
 const SearchSection = () => {
     return (
-        <Grid container xs={12} px={8} >
+        <Grid container xs={12} px={8} item>
             <Card sx={{ width: "100%" }}>
                 <Grid container item xs={12} px={2} py={2} >
                     <Grid item xs={3} borderRight="2px solid #CBCBCD">

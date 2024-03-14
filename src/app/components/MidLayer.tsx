@@ -8,7 +8,7 @@ import Google from '../../assets/images/google.png';
 
 const MidLayer = () => {
     return (
-        <Grid container xs={10} padding={6}>
+        <Grid container xs={10} padding={6} item>
             <Grid item xs={4} >
                 <Image style={{ width: "250px", height: "480px" }} src={Phone} alt='phone' />
             </Grid>
