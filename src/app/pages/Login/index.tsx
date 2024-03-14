@@ -91,7 +91,7 @@ const Login = () => {
                         letterSpacing: "0em",
                         textAlign: "center",
                         color: "#75767A"
-                    }}>Don't have an account yet?</Typography>
+                    }}>Don&apos;t have an account yet?</Typography>
                     <Typography className='poppins' sx={{
                         fontSize: "14px",
                         fontWeight: 400,
