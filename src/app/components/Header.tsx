@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Button, Grid, Typography } from '@mui/material';
 import { IoMdArrowDropdown } from "react-icons/io";
+import Image from 'next/image';
+import UserProfile from '../../assets/images/UserProfile.png';
 
 interface ILinkComponent {
     header: string;
@@ -8,7 +10,8 @@ interface ILinkComponent {
 }
 
 interface IHeader {
-    handleOpen: () => void;
+    handleOpen?: () => void;
+    authenticated?: boolean
 }
 
 const LinkComponent = ({ header, text }: ILinkComponent) => (
@@ -36,7 +39,7 @@ const LinkComponent = ({ header, text }: ILinkComponent) => (
     </React.Fragment>
 )
 
-const Header = ({ handleOpen }: IHeader) => {
+const Header = ({ handleOpen, authenticated }: IHeader) => {
     return (
         <Grid container xs={12} py={4} item>
             <Grid item xs={4}>
@@ -84,19 +87,25 @@ const Header = ({ handleOpen }: IHeader) => {
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fillRule="evenodd" clipRule="evenodd" d="M13.3249 15.4988C11.9542 16.4455 10.2919 17 8.5 17C3.80558 17 0 13.1944 0 8.5C0 3.80558 3.80558 0 8.5 0C13.1944 0 17 3.80558 17 8.5C17 10.3319 16.4205 12.0285 15.4348 13.4163C15.712 13.3983 15.9952 13.4952 16.2071 13.7071L19.2574 16.7574C19.4146 16.9146 19.5186 17.1211 19.5325 17.3431C19.6987 19.9915 17.6018 19.995 16.2766 19.5935C16.094 19.5382 15.9392 19.4189 15.8247 19.2663L13.5204 16.1938C13.3659 15.9879 13.302 15.7394 13.3249 15.4988ZM15 8.5C15 12.0899 12.0899 15 8.5 15C4.91015 15 2 12.0899 2 8.5C2 4.91015 4.91015 2 8.5 2C12.0899 2 15 4.91015 15 8.5Z" fill="black" />
                 </svg>
-                <Button
-                    variant='outlined'
-                    size='large'
-                    className='poppins'
-                    onClick={handleOpen}
-                    sx={{
-                        border: `1px solid #000`,
-                        color: "#000",
-                        fontWeight: 600,
-                        textTransform: "capitalize",
-                        ml: 3,
-                        px: 4
-                    }}>Log In</Button>
+                {authenticated ?
+                    <Box sx={{ ml: 3 }}>
+                        <Image style={{
+                            width: "60px", height: "60px", borderRadius: "50%"
+                        }} src={UserProfile} alt="user profile" />
+                    </Box>
+                    : <Button
+                        variant='outlined'
+                        size='large'
+                        className='poppins'
+                        onClick={handleOpen}
+                        sx={{
+                            border: `1px solid #000`,
+                            color: "#000",
+                            fontWeight: 600,
+                            textTransform: "capitalize",
+                            ml: 3,
+                            px: 4
+                        }}>Log In</Button>}
             </Grid>
         </Grid>
     )
