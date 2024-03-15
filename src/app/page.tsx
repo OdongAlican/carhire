@@ -12,7 +12,7 @@ import MidLayer from "./components/MidLayer";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import ModalComponent from "./modals/Modal";
-import Login from "./pages/Login";
+import Login from "./login";
 
 const style = {
   position: 'absolute' as 'absolute',

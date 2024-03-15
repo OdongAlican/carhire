@@ -10,6 +10,7 @@ import {
     TextField,
     Typography
 } from '@mui/material';
+import Link from 'next/link';
 
 const Login = () => {
     const [showPassword, setShowPassword] = React.useState(false);
@@ -69,37 +70,40 @@ const Login = () => {
                     />
                 </FormControl>
             </Grid>
-            <Grid mt={2} item xs={12} sx={{ display: "flex",  flexDirection: "column", alignItems: "center" }}>
+            <Grid mt={2} item xs={12} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <Button className='poppins' variant='contained' size='large' sx={{ bgcolor: "black", px: 6, textTransform: "capitalize" }}>Log In</Button>
                 <Typography className='poppins' sx={{
-                        fontSize: "14px",
-                        fontWeight: 400,
-                        mt: 2,
-                        lineHeight: "24px",
-                        letterSpacing: "0em",
-                        textAlign: "center",
-                        color: "#333333"
-                    }}>Forgot your password?</Typography>
+                    fontSize: "14px",
+                    fontWeight: 400,
+                    mt: 2,
+                    lineHeight: "24px",
+                    letterSpacing: "0em",
+                    textAlign: "center",
+                    color: "#333333"
+                }}>Forgot your password?</Typography>
             </Grid>
 
-            <Grid item xs={12} mt={3} sx={{ display: "flex",  flexDirection: "column", alignItems: "center" }}>
+            <Grid item xs={12} mt={3} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
                 <Typography className='poppins' sx={{
-                        fontSize: "14px",
-                        fontWeight: 200,
-                        mt: 2,
-                        lineHeight: "24px",
-                        letterSpacing: "0em",
-                        textAlign: "center",
-                        color: "#75767A"
-                    }}>Don&apos;t have an account yet?</Typography>
-                    <Typography className='poppins' sx={{
+                    fontSize: "14px",
+                    fontWeight: 200,
+                    mt: 2,
+                    lineHeight: "24px",
+                    letterSpacing: "0em",
+                    textAlign: "center",
+                    color: "#75767A"
+                }}>Don&apos;t have an account yet?</Typography>
+                <Link
+                    href="/signup"
+                    className='poppins' style={{
+                        textDecoration: "none",
                         fontSize: "14px",
                         fontWeight: 400,
                         lineHeight: "24px",
                         letterSpacing: "0em",
                         textAlign: "center",
                         color: "#333333"
-                    }}>Create one</Typography>
+                    }}>Create one</Link>
             </Grid>
         </Grid>
     )
