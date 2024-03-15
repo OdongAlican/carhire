@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 import ModalComponent from "./modals/Modal";
 import Login from "./login";
 
-const style = {
+export const style = {
   position: 'absolute' as 'absolute',
   top: '50%',
   left: '50%',
