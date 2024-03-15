@@ -71,16 +71,18 @@ const Login = () => {
                 </FormControl>
             </Grid>
             <Grid mt={2} item xs={12} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Button className='poppins' variant='contained' size='large' sx={{ bgcolor: "black", px: 6, textTransform: "capitalize" }}>Log In</Button>
-                <Typography className='poppins' sx={{
-                    fontSize: "14px",
-                    fontWeight: 400,
-                    mt: 2,
-                    lineHeight: "24px",
-                    letterSpacing: "0em",
-                    textAlign: "center",
-                    color: "#333333"
-                }}>Forgot your password?</Typography>
+                <Button className='poppins' variant='contained' size='large' sx={{ bgcolor: "black", px: 6, textTransform: "capitalize", mb: 2 }}>Log In</Button>
+                <Link
+                    href="/passwordreset"
+                    className='poppins' style={{
+                        textDecoration: "none",
+                        fontSize: "14px",
+                        fontWeight: 400,
+                        lineHeight: "24px",
+                        letterSpacing: "0em",
+                        textAlign: "center",
+                        color: "#333333"
+                    }}>Forgot your password?</Link>
             </Grid>
 
             <Grid item xs={12} mt={3} sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
