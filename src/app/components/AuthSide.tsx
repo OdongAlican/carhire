@@ -1,4 +1,5 @@
 import { Box, Button, Grid, Typography } from '@mui/material'
+import Link from 'next/link';
 import React from 'react'
 
 const AuthSide = () => {
@@ -54,15 +55,17 @@ const AuthSide = () => {
                 rent activities
             </Typography>
             <Box sx={{ display: "flex", alignItems: "center", mt: 4 }}>
-                <Button
-                    className='poppins'
-                    variant='outlined'
-                    size='large'
-                    sx={{
-                        border: "1px solid #FFF",
-                        color: "#FFF",
-                        px: 4, textTransform: "capitalize"
-                    }}>Back Home</Button>
+                <Link href="../">
+                    <Button
+                        className='poppins'
+                        variant='outlined'
+                        size='large'
+                        sx={{
+                            border: "1px solid #FFF",
+                            color: "#FFF",
+                            px: 4, textTransform: "capitalize"
+                        }}>Back Home</Button>
+                </Link>
             </Box>
         </Grid>
     )
