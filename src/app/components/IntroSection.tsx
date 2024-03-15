@@ -10,7 +10,7 @@ const IntroSection = () => {
         <Typography
           className='poppins'
           sx={{
-            fontSize: "50px",
+            fontSize: "55px",
             fontWeight: 700,
             lineHeight: "75px",
             letterSpacing: "0em",
@@ -32,7 +32,7 @@ const IntroSection = () => {
             color: "#75767A",
             mt: 3
           }}>
-          Rushing somewhere, have a gig to get to, somewhere
+          Rushing somewhere, have a gig to get to, somewhere <br />
           quick you need to get to, just come, Rent and Drive
         </Typography>
       </Grid>
@@ -46,7 +46,7 @@ const IntroSection = () => {
             position: "relative",
           }}>
           <Image style={{
-            width: "90%",
+            width: "100%",
             height: "90%",
             bottom: 0,
             right: 0,
