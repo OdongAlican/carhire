@@ -102,7 +102,6 @@ const FilterBy = () => {
     ]
 
     return (
-
         <Grid container xs={12} py={6} mb={6} item>
             <Grid container item xs={12} py={0} spacing={2} >
                 <Grid
