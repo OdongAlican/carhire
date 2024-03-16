@@ -9,24 +9,18 @@ import FilterBy from '../components/FilterBy'
 const AllRental = () => {
   return (
     <React.Fragment>
-    <Box sx={{ paddingX: "100px" }}>
-      <Header authenticated={true} />
-      <MainIntro />
-      <FilterBy />
-      {/* <Popular />
-      <CarLogo />
-      <HowItWorks /> */}
-    </Box>
-    <Box>
-      <Banner />
-    </Box>
-    {/* <Box sx={{ paddingX: "100px", justifyContent: "center", display: "flex" }}>
-      <MidLayer />
-    </Box> */}
-    <Box>
-      <Footer />
-    </Box>
-  </React.Fragment>
+      <Box sx={{ paddingX: "100px" }}>
+        <Header authenticated={true} />
+        <MainIntro />
+        <FilterBy />
+      </Box>
+      <Box>
+        <Banner />
+      </Box>
+      <Box>
+        <Footer />
+      </Box>
+    </React.Fragment>
   )
 }
 

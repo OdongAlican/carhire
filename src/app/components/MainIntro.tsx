@@ -13,7 +13,7 @@ import {
 import { styled } from '@mui/material/styles';
 import { grey } from '@mui/material/colors';
 
-const BootstrapInput = styled(InputBase)(({ theme }) => ({
+export const BootstrapInput = styled(InputBase)(({ theme }) => ({
     'label + &': {
         marginTop: theme.spacing(3),
     },
