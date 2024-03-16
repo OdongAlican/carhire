@@ -10,6 +10,10 @@ import {
 } from '@mui/material';
 import { BootstrapInput } from './MainIntro';
 import { grey } from '@mui/material/colors';
+import Image from 'next/image';
+import CarLogo from '../../assets/images/Rav4.png';
+import CarLogoTwo from '../../assets/images/Rav4One.png';
+import CarLogoThree from '../../assets/images/Rav4Three.png';
 
 const CarInformation = () => {
     const [age, setAge] = React.useState('');
@@ -18,35 +22,45 @@ const CarInformation = () => {
     };
     return (
         <Grid container xs={12} item>
-            <Grid item xs={7} my={6} py={4}>
-                <Typography className='poppins' sx={{
-                    fontSize: "25px",
-                    fontWeight: 700,
-                    lineHeight: "46px",
-                    letterSpacing: "0em",
-                }}>Rent a car in easy steps</Typography>
-                <Typography
-                    className='poppins'
+            <Grid item xs={7}>
+                <Box
                     sx={{
-                        fontSize: "17px",
-                        fontWeight: 300,
-                        lineHeight: "30px",
-                        letterSpacing: "0em",
-                        textAlign: "left",
-                        color: "#75767A",
-                        mt: 3
+                        height: "100%",
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        position: "relative",
                     }}>
-                    Renting a car creates freedom for
-                    you and we will help you find the
-                    best car for you at a great price
-                </Typography>
+                    <Image style={{
+                        width: "80%",
+                        height: "80%",
+                        left: 0,
+                        top: 20,
+                        position: "absolute",
+                    }} src={CarLogo} alt="Description" />
+                    <Box sx={{ bgcolor: "#F2F2F2", height: "75%", width: "25%", borderRadius: "5px" }} />
+                    <Box sx={{ width: "50%", height: "10%", mt: 1 }}>
+                        <Grid container xs={12} spacing={2} item>
+                            <Grid item xs={4}>
+                                <Image style={{ width: "100px", height: "70px"}} src={CarLogoTwo} alt='current car' />
+                            </Grid>
+                            <Grid item xs={4} >
+                                <Image style={{ width: "100px", height: "70px", border:"1.5px solid #F2F2F2"}} src={CarLogo} alt='current car' />
+                            </Grid>
+                            <Grid item xs={4}>
+                                <Image style={{ width: "100px", height: "70px"}} src={CarLogoThree} alt='current car' />
+                            </Grid>
+                        </Grid>
+                    </Box>
+                </Box>
             </Grid>
             <Grid
                 container
                 item
                 xs={5}
-                my={6}
-                p={4}
+                py={5}
                 pr={0}>
                 <Grid spacing={2} xs={12} item>
                     <Typography className='poppins'
