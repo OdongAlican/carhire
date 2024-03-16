@@ -165,7 +165,13 @@ const MainIntro = () => {
                             alignItems: "end",
                             justifyContent: "end"
                         }} item xs={6}>
-                            <Button className='poppins' variant='contained' size='large' sx={{ bgcolor: grey[900], px: 6, textTransform: "capitalize" }}>Rent Now</Button>
+                            <Button
+                                className='poppins'
+                                variant='contained'
+                                size='large'
+                                sx={{ bgcolor: grey[900], px: 4, textTransform: "capitalize" }}
+                            >Search Car
+                            </Button>
                         </Grid>
                     </Grid>
                 </Grid>

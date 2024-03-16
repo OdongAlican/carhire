@@ -4,6 +4,7 @@ import { Box } from '@mui/material'
 import Header from '../components/Header'
 import Banner from '../components/Banner'
 import MainIntro from '../components/MainIntro'
+import FilterBy from '../components/FilterBy'
 
 const AllRental = () => {
   return (
@@ -11,9 +12,8 @@ const AllRental = () => {
     <Box sx={{ paddingX: "100px" }}>
       <Header authenticated={true} />
       <MainIntro />
-      {/* <IntroSection />
-      <SearchSection />
-      <Popular />
+      <FilterBy />
+      {/* <Popular />
       <CarLogo />
       <HowItWorks /> */}
     </Box>
