@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Banner from '../components/Banner'
 import Header from '../components/Header'
 import CarInformation from '../components/CarInformation'
+import CarOwner from '../components/CarOwner'
 
 const CarDetails = () => {
     return (
@@ -11,6 +12,7 @@ const CarDetails = () => {
             <Box sx={{ paddingX: "100px" }}>
                 <Header authenticated={true} />
                 <CarInformation />
+                <CarOwner />
             </Box>
             <Box>
                 <Banner />

@@ -28,29 +28,28 @@ const CarInformation = () => {
                         height: "100%",
                         width: "100%",
                         display: "flex",
-                        justifyContent: "center",
                         flexDirection: "column",
                         alignItems: "center",
                         position: "relative",
                     }}>
                     <Image style={{
-                        width: "80%",
-                        height: "80%",
+                        width: "90%",
+                        height: "90%",
                         left: 0,
-                        top: 20,
+                        bottom: 55,
                         position: "absolute",
                     }} src={CarLogo} alt="Description" />
-                    <Box sx={{ bgcolor: "#F2F2F2", height: "75%", width: "25%", borderRadius: "5px" }} />
-                    <Box sx={{ width: "50%", height: "10%", mt: 1 }}>
+                    <Box sx={{ bgcolor: "#F2F2F2", height: "85%", width: "25%", borderRadius: "4px" }} />
+                    <Box sx={{ width: "50%", height: "5%", mt: 1 }}>
                         <Grid container xs={12} spacing={2} item>
                             <Grid item xs={4}>
-                                <Image style={{ width: "100px", height: "70px"}} src={CarLogoTwo} alt='current car' />
+                                <Image style={{ width: "100px", height: "70px" }} src={CarLogoTwo} alt='current car' />
                             </Grid>
                             <Grid item xs={4} >
-                                <Image style={{ width: "100px", height: "70px", border:"1.5px solid #F2F2F2"}} src={CarLogo} alt='current car' />
+                                <Image style={{ width: "100px", height: "70px", border: "1.5px solid #F2F2F2" }} src={CarLogo} alt='current car' />
                             </Grid>
                             <Grid item xs={4}>
-                                <Image style={{ width: "100px", height: "70px"}} src={CarLogoThree} alt='current car' />
+                                <Image style={{ width: "100px", height: "70px" }} src={CarLogoThree} alt='current car' />
                             </Grid>
                         </Grid>
                     </Box>
@@ -62,28 +61,32 @@ const CarInformation = () => {
                 xs={5}
                 py={5}
                 pr={0}>
-                <Grid spacing={2} xs={12} item>
-                    <Typography className='poppins'
-                        sx={{
-                            fontSize: "28px",
-                            fontWeight: 700,
-                            lineHeight: "69px",
-                            letterSpacing: "0em",
-                            textAlign: "left",
-                        }}>
-                        Toyota RAV4 Hybrid XSE
-                    </Typography>
-                    <Typography className='poppins'
-                        sx={{
-                            mb: 2,
-                            fontSize: "14px",
-                            fontWeight: 500,
-                            letterSpacing: "0em",
-                            textAlign: "left",
-                            color: "#75767A"
-                        }}>
-                        Toyota
-                    </Typography>
+                <Grid container spacing={2} xs={12} item>
+                    <Grid item xs={12}>
+                        <Typography className='poppins'
+                            sx={{
+                                fontSize: "28px",
+                                fontWeight: 700,
+                                lineHeight: "69px",
+                                letterSpacing: "0em",
+                                textAlign: "left",
+                            }}>
+                            Toyota RAV4 Hybrid XSE
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={12}>
+                        <Typography className='poppins'
+                            sx={{
+                                mb: 2,
+                                fontSize: "14px",
+                                fontWeight: 500,
+                                letterSpacing: "0em",
+                                textAlign: "left",
+                                color: "#75767A"
+                            }}>
+                            Toyota
+                        </Typography>
+                    </Grid>
                 </Grid>
                 <Grid
                     xs={12}
