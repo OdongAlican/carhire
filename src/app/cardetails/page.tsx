@@ -6,6 +6,7 @@ import Header from '../components/Header'
 import CarInformation from '../components/CarInformation'
 import CarOwner from '../components/CarOwner'
 import Popular from '../components/Popular'
+import RentedCarReviews from '../components/RentedCarReviews'
 
 const CarDetails = () => {
     return (
@@ -15,6 +16,7 @@ const CarDetails = () => {
                 <CarInformation />
                 <CarOwner />
                 <Popular header='You May be Interested in' />
+                <RentedCarReviews />
             </Box>
             <Box>
                 <Banner />
