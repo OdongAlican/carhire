@@ -5,6 +5,7 @@ import Banner from '../components/Banner'
 import Header from '../components/Header'
 import CarInformation from '../components/CarInformation'
 import CarOwner from '../components/CarOwner'
+import Popular from '../components/Popular'
 
 const CarDetails = () => {
     return (
@@ -13,6 +14,7 @@ const CarDetails = () => {
                 <Header authenticated={true} />
                 <CarInformation />
                 <CarOwner />
+                <Popular header='You May be Interested in' />
             </Box>
             <Box>
                 <Banner />

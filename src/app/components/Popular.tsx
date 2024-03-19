@@ -48,7 +48,7 @@ const PopularItem = ({ header, model, price, image, index }: IPopularItem) => (
     </Grid>
 )
 
-const Popular = () => {
+const Popular = ( { header}: {header: string}) => {
     const cars = [
         { name: "Audi", model: "Audi Model S black", price: "Shs 300,000 / day", image: PopularOne },
         { name: "Mercedez Benz", model: "Mercedez Benz", price: "Shs 400,000 / day", image: PopularTwo },
@@ -65,7 +65,7 @@ const Popular = () => {
                     lineHeight: "44px",
                     letterSpacing: "0em",
                     textAlign: "left",
-                }}>Most Popular</Typography>
+                }}>{header}</Typography>
                 <Typography className='poppins' sx={{
                     fontSize: "14px",
                     fontWeight: 500,

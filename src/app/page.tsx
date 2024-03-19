@@ -45,7 +45,7 @@ export default function Home() {
         <Header handleOpen={handleOpen} />
         <IntroSection />
         <SearchSection />
-        <Popular />
+        <Popular header="Most Popular" />
         <CarLogo />
         <HowItWorks />
       </Box>
