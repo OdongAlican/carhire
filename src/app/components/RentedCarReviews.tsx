@@ -12,7 +12,7 @@ interface IReview {
     name: string;
 }
 
-const Review = ({ text, image, name} : IReview) => (
+const Review = ({ text, image, name }: IReview) => (
     <Grid sx={{ borderRadius: "5px" }} item xs={3}>
         <Box>
             <Typography className='poppins' sx={{
@@ -50,21 +50,27 @@ const RentedCarReviews = () => {
         },
         {
             text: `
-            Carent has an array of experts with multifaceted skills. From technology to car repairers to business to creative arts. Flexibility and freedom of expression is the magic we progress every day.
+            Carent has an array of experts with multifaceted skills.
+            From technology to car repairers to business to creative arts.
+            Flexibility and freedom of expression is the magic we progress every day.
             `,
             image: ReviewerTwo,
             name: "Marie Sashah"
         },
         {
             text: `
-            To be Africa’s number one creative, innovative and design hub, fashioning sustainable models for startup excellence.
+            To be Africa’s number one creative,
+            innovative and design hub,
+            fashioning sustainable models for startup excellence.
             `,
             image: ReviewerThree,
             name: "Danny Selahh"
         },
         {
             text: `
-            The end in mind at carent is a multinational service that transforms needs into great enjoyment. This car is amazing and it is so smooth in driving.
+            The end in mind at carent is a multinational
+            service that transforms needs into great enjoyment.
+            This car is amazing and it is so smooth in driving.
             `,
             image: ReviewerOne,
             name: "David Luzuki"
