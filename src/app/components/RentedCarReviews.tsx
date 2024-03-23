@@ -50,7 +50,32 @@ const RentedCarReviews = () => {
         autoplay: true,
         centerPadding: "0px",
         dots: true,
-        cssEase: "linear"
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    infinite: true,
+                    dots: true,
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                    initialSlide: 2,
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
     }
 
     const reviews: Array<IReview> = [
@@ -130,11 +155,9 @@ const RentedCarReviews = () => {
                 <Slider {...settings}>
                     {reviews.map((person, index) => {
                         return (
-                            <Review
-                                text={person.text}
-                                image={person.image}
-                                name={person.name}
-                                key={index} />
+                            <Box key={index} sx={{ bgcolor: "cyan" }}>
+                                <Review text={person.text} image={person.image} name={person.name} />
+                            </Box>
                         )
                     })}
                 </Slider>
