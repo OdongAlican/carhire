@@ -24,6 +24,17 @@
     transition: transform 300ms;
 }
 
+.slide-two img {
+    width: 6rem;
+    margin: 0 auto;
+    max-height: 90px;
+    border-radius: 5px;
+}
+
+.slide-two {
+    transition: transform 300ms;
+}
+
 .activeSlide {
     transform: scale(1.1);
     opacity: 1;
