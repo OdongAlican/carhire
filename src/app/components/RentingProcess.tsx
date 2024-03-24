@@ -5,6 +5,7 @@ import {
     Button,
     FormControl,
     Grid,
+    InputAdornment,
     Typography,
 } from '@mui/material';
 import Image from 'next/image';
@@ -16,6 +17,8 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import { BootstrapInput } from './MainIntro';
 import { grey } from '@mui/material/colors';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 
 const RentingProcess = () => {
     return (
@@ -105,7 +108,14 @@ const RentingProcess = () => {
                                     fontSize: "18px",
                                     mb: 1
                                 }}>Pick up Car</Typography>
-                            <BootstrapInput />
+                            <BootstrapInput
+                                sx={{ bgcolor: "#F2F2F2", borderRadius: "4px" }}
+                                startAdornment={
+                                    <InputAdornment position="end">
+                                        <LocationOnIcon  sx={{ cursor: "pointer"}} fontSize="small" />
+                                    </InputAdornment>
+                                }
+                            />
                         </FormControl>
                     </Grid>
                     <Grid
@@ -114,7 +124,7 @@ const RentingProcess = () => {
                         xs={12}
                         spacing={2}
                         item>
-                        <Grid xs={6} item>
+                        <Grid xs={6} mt={1} item>
                             <FormControl fullWidth variant="standard">
                                 <Typography
                                     className='poppins'
@@ -122,10 +132,17 @@ const RentingProcess = () => {
                                         fontWeight: 400,
                                         fontSize: "14px",
                                     }}>Start</Typography>
-                                <BootstrapInput />
+                                <BootstrapInput
+                                    sx={{ bgcolor: "#F2F2F2", borderRadius: "4px" }}
+                                    startAdornment={
+                                        <InputAdornment position="end">
+                                            <CalendarMonthIcon sx={{ cursor: "pointer"}} fontSize="small" />
+                                        </InputAdornment>
+                                    }
+                                />
                             </FormControl>
                         </Grid>
-                        <Grid xs={6} item>
+                        <Grid xs={6} mt={1} item>
                             <FormControl fullWidth variant="standard">
                                 <Typography
                                     className='poppins'
@@ -133,7 +150,14 @@ const RentingProcess = () => {
                                         fontWeight: 400,
                                         fontSize: "14px",
                                     }}>End</Typography>
-                                <BootstrapInput />
+                                <BootstrapInput
+                                    sx={{ bgcolor: "#F2F2F2", borderRadius: "4px" }}
+                                    startAdornment={
+                                        <InputAdornment position="end">
+                                            <CalendarMonthIcon sx={{ cursor: "pointer"}} fontSize="small" />
+                                        </InputAdornment>
+                                    }
+                                />
                             </FormControl>
                         </Grid>
                     </Grid>

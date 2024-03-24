@@ -1,12 +1,10 @@
 'use client'
 import React from 'react'
 import {
-    Box,
     Button,
     FormControl,
     Grid,
     InputBase,
-    InputLabel,
     NativeSelect,
     Typography
 } from '@mui/material'
@@ -153,7 +151,6 @@ const MainIntro = () => {
                                     onChange={handleChange}
                                     input={<BootstrapInput />}
                                 >
-                                    {/* <option aria-label="None" value="" /> */}
                                     <option value={10}>5</option>
                                     <option value={20}>4</option>
                                     <option value={30}>3</option>
