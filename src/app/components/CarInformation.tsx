@@ -16,6 +16,7 @@ import CarLogoTwo from '../../assets/images/Rav4One.png';
 import CarLogoThree from '../../assets/images/Rav4Three.png';
 import ModalComponent from '../modals/Modal';
 import RentingProcess from './RentingProcess';
+import HorizontalNonLinearStepper from './Stepper';
 
 export const style = {
     position: 'absolute' as 'absolute',
@@ -23,6 +24,7 @@ export const style = {
     left: '50%',
     transform: 'translate(-50%, -50%)',
     width: "100%",
+    maxHeight: "90%",
     bgcolor: 'background.paper',
     borderRadius: '5px',
     p: 4,
@@ -45,7 +47,9 @@ const CarInformation = () => {
                     style={style}
                     open={open}
                     handleClose={handleClose}>
-                    <RentingProcess />
+                    <HorizontalNonLinearStepper >
+                        <RentingProcess />
+                    </HorizontalNonLinearStepper>
                 </ModalComponent>
             }
             <Grid item xs={7}>

@@ -55,7 +55,7 @@ const RentingProcess = () => {
                         width: "80%",
                         mt: 6,
                         border: `1.5px solid #F2F2F2`,
-                        p: 4,
+                        p: 3,
                         borderRadius: "4px"
                     }}>
                         <Typography className='poppins'
