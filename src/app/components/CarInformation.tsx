@@ -14,14 +14,40 @@ import Image from 'next/image';
 import CarLogo from '../../assets/images/Rav4.png';
 import CarLogoTwo from '../../assets/images/Rav4One.png';
 import CarLogoThree from '../../assets/images/Rav4Three.png';
+import ModalComponent from '../modals/Modal';
+import RentingProcess from './RentingProcess';
+
+export const style = {
+    position: 'absolute' as 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: "100%",
+    bgcolor: 'background.paper',
+    borderRadius: '5px',
+    p: 4,
+};
 
 const CarInformation = () => {
     const [age, setAge] = React.useState('');
+    const [open, setOpen] = React.useState<boolean>(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+
     const handleChange = (event: { target: { value: string } }) => {
         setAge(event.target.value);
     };
+
     return (
         <Grid container xs={12} item>
+            {
+                open && <ModalComponent
+                    style={style}
+                    open={open}
+                    handleClose={handleClose}>
+                    <RentingProcess />
+                </ModalComponent>
+            }
             <Grid item xs={7}>
                 <Box
                     sx={{
@@ -210,6 +236,7 @@ const CarInformation = () => {
                             justifyContent: "end"
                         }} item xs={6}>
                             <Button
+                                onClick={() => handleOpen()}
                                 className='poppins'
                                 variant='contained'
                                 size='large'

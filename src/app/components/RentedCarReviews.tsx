@@ -155,7 +155,7 @@ const RentedCarReviews = () => {
                 <Slider {...settings}>
                     {reviews.map((person, index) => {
                         return (
-                            <Box key={index} sx={{ bgcolor: "cyan" }}>
+                            <Box key={index}>
                                 <Review text={person.text} image={person.image} name={person.name} />
                             </Box>
                         )
