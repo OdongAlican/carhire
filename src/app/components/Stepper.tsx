@@ -71,20 +71,25 @@ export default function HorizontalNonLinearStepper({ children }: IHorizontalNonL
                     fontWeight: 600,
                     mb: 1,
                     width: "100%",
+                    fontSize: "16px",
                     textAlign: "center"
                 }}>
                 Renting Process
             </Typography>
-            <Stepper alternativeLabel activeStep={activeStep}>
+            <Stepper sx={{ my: 2 }} alternativeLabel activeStep={activeStep}>
                 {steps.map((label, index) => (
                     <Step key={label} completed={completed[index]}>
-                        <StepButton color="inherit" onClick={handleStep(index)}>
+                        <StepButton
+                            className='poppins'
+                            sx={{ fontSize: "11px" }}
+                            color="inherit"
+                            onClick={handleStep(index)}>
                             {label}
                         </StepButton>
                     </Step>
                 ))}
             </Stepper>
-            <div>
+            <Box>
                 {allStepsCompleted() ? (
                     <React.Fragment>
                         <Typography
@@ -108,7 +113,7 @@ export default function HorizontalNonLinearStepper({ children }: IHorizontalNonL
                         </Box>
                     </React.Fragment>
                 )}
-            </div>
+            </Box>
         </Box>
     );
 }

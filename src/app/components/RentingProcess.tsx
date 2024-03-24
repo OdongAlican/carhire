@@ -31,7 +31,7 @@ const RentingProcess = () => {
                         position: "relative",
                     }}>
                     <Image style={{
-                        width: "70%",
+                        width: "60%",
                         height: "65%",
                         top: 0,
                         bottom: 0,
@@ -53,7 +53,7 @@ const RentingProcess = () => {
                     </Box>
                     <Box sx={{
                         width: "80%",
-                        mt: 6,
+                        mt: 8,
                         border: `1.5px solid #F2F2F2`,
                         p: 3,
                         borderRadius: "4px"
@@ -89,7 +89,6 @@ const RentingProcess = () => {
                 container
                 item
                 xs={5}
-                py={5}
                 pr={0}>
                 <Grid item xs={12}>
                     <LocalizationProvider dateAdapter={AdapterDayjs}>
