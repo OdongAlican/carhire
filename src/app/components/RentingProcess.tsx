@@ -133,7 +133,6 @@ const RentingProcess = () => {
                                     sx={{
                                         fontWeight: 400,
                                         fontSize: "14px",
-                                        mb: 1
                                     }}>End</Typography>
                                 <BootstrapInput />
                             </FormControl>
